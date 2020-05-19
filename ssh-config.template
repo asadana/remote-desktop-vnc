@@ -1,0 +1,11 @@
+# ~/.ssh/config template file
+# This will set up a SSH tunnel to your VNC myVncServer
+# While the tunnel is active remote VNC server can be accessed on localhost:5901
+
+Host myVncServer
+    User asadana
+    Port 22
+    HostName my.remote.vncserver
+    IdentityFile /home/asadana/.ssh/id_rsa_remote_server
+    Compression yes
+    LocalForward 5901 localhost:5901
