@@ -8,3 +8,11 @@ NOTE: This has been tested on the following:
  - Kubuntu 20.04
  - Arch Linux
  
+Relevant Links:
+
+ - VNC Server man page [vncserver(1)][vncserver-man]
+ - Systemd Unit man page [systemd.unit(5)][systemd-unit-man]
+
+
+[vncserver-man]: <https://linux.die.net/man/1/vncserver>
+[systemd-unit-man]: <https://www.freedesktop.org/software/systemd/man/systemd.unit.html>
