@@ -1,0 +1,18 @@
+[Unit]
+Description=Remote desktop service (TigerVNC)
+# Ensure that syslog and network targets are reached before starting vncserver
+After=syslog.target network.target
+
+[Service]
+Type=simple
+# Replace this with the intended user
+User=asadana
+# Uncomment PAMName if needed
+#PAMName=login
+PIDFile=/home/%u/.vnc/%H%i.pid
+ExecStartPre=/usr/bin/vncserver -kill :%i > /dev/null 2>&1 || :
+ExecStart=/usr/bin/x0vncserver -display=:%i -Geometry=1920x1080+0+0 -rfbauth=/home/%u/.vnc/passwd -rfbport=5901
+ExecStop=/usr/bin/vncserver -kill :%i
+
+[Install]
+WantedBy=multi-user.target
