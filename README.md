@@ -22,14 +22,14 @@ NOTE: This has been tested on the following:
     $ vncserver
     ```
  
- 3. Copy xstartup file. Ensure xstartup is executable
+ 3. Copy [xstartup](xstartup) file. Ensure xstartup is executable
     ```sh
     $ chmod +x xstartup
     ```
 
- 4. Modify or replace the vnserver@.service file
+ 4. Modify or replace the [vnserver@.service](vnserver@.service) file
 
- 5. On the client side, set up ~/.ssh/config file from the ssh-config.template
+ 5. On the client side, set up ~/.ssh/config file from the [ssh-config.template](ssh-config.template)
 
 ## Other helpful commands
 
