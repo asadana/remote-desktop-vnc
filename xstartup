@@ -1,0 +1,13 @@
+#!/bin/sh
+
+#  Should be placed at /home/user/.vnc/xstartup
+
+xrdb "$HOME/.Xresources"
+
+vncconfig -iconic &
+
+# For KDE Plasma 5
+dbus-launch --exit-with-session startplasma-x11 &
+
+# For Gnome 3
+#dbus-launch --exit-with-session gnome-session &
