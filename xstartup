@@ -1,6 +1,7 @@
 #!/bin/sh
 
-#  Should be placed at /home/user/.vnc/xstartup
+# Should be placed at /home/user/.vnc/xstartup
+# Should be executable
 
 xrdb "$HOME/.Xresources"
 
